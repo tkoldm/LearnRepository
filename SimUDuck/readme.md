@@ -1,4 +1,5 @@
-﻿Simple example of strategy pattern from Chapter 1.
+﻿Simple example of strategy pattern from Chapter 1. 
+
 We can set any fly or quack implementation with methods:
 <li> SetFlyBehavior() </li>
 <li> SetQuackBehavior() </li>
@@ -37,4 +38,5 @@ console output will be:
 *Silence*
 ```
 
+With this pattern we can avoid problems with future support when we need to add new behavior for new implementations of base class.
 The main essence of pattern **strategy** - possibility to change object behavior in run time.

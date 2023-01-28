@@ -30,7 +30,9 @@ public abstract class CondimentDecorator : Beverage
     }
 }
 ```
-After that all implementations of `CondimentDecorator` will take a `Beverage` instance from constructor.
+After that all implementations of `CondimentDecorator` will take a `Beverage` instance from constructor. 
+
+With this pattern we don't need create new implementation of base class for all new additional options. For example if tomorrow bosses decides to create new condiment to menu we just need to implement `CondimentDecorator` with needed functional. We don't need to create `Espresso` class with this or all other condiments.
 
 ```mermaid
 classDiagram
